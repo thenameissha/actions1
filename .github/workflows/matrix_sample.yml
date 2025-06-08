@@ -16,11 +16,13 @@ jobs:
 
     steps:
         
-      - name: Pull and run hello-world image
+      - name: Pull ${{matrix.images}}
         run: |
           echo "Pulling Docker image..."
-          docker pull hello-world
+          docker pull ${{matrix.images}}
           
-          echo "Running container..."
-          docker run hello-world
+      - name: Run image on ${{matrix.os}}
+        run: |
+          echo "Running Docker image..."
+          docker run ${{matrix.images}}
           
