@@ -1,6 +1,6 @@
 name: Generate ascii
 
-on: push
+on: none
 
 jobs:
   build_job-1:
