@@ -1,4 +1,4 @@
-name: Run Docker Sample
+name: matrix testing 6 jobs
 
 concurrency: 
     group: my sample
